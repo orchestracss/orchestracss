@@ -2,7 +2,7 @@
 
 **Experiment:** What if CSS becomes the orchestrator, browser - the runtime?
 
-## Crazy Idea
+## Idea
 Using ONLY native browser features (2026 baseline):
 ✅ OKLCH colors (no more HEX)
 ✅ light-dark() auto themes (no JS toggles)  
