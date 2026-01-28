@@ -1,0 +1,136 @@
+@layer orchestra-layout {
+  /* ==================== SUBGRID SYSTEM ==================== */
+  
+  /* SUBGRID CONTAINER */
+  .oc-subgrid {
+    display: grid;
+    grid-template-columns: subgrid;
+    grid-template-rows: subgrid;
+    gap: inherit;
+    align-items: inherit;
+    justify-items: inherit;
+    align-content: inherit;
+    justify-content: inherit;
+  }
+  
+  /* SUBGRID COLUMN SPANS */
+  .oc-subgrid-col-1 { grid-column: span 1; }
+  .oc-subgrid-col-2 { grid-column: span 2; }
+  .oc-subgrid-col-3 { grid-column: span 3; }
+  .oc-subgrid-col-4 { grid-column: span 4; }
+  .oc-subgrid-col-5 { grid-column: span 5; }
+  .oc-subgrid-col-6 { grid-column: span 6; }
+  .oc-subgrid-col-7 { grid-column: span 7; }
+  .oc-subgrid-col-8 { grid-column: span 8; }
+  .oc-subgrid-col-9 { grid-column: span 9; }
+  .oc-subgrid-col-10 { grid-column: span 10; }
+  .oc-subgrid-col-11 { grid-column: span 11; }
+  .oc-subgrid-col-12 { grid-column: span 12; }
+  .oc-subgrid-col-full { grid-column: 1 / -1; }
+  
+  /* SUBGRID ROW SPANS */
+  .oc-subgrid-row-1 { grid-row: span 1; }
+  .oc-subgrid-row-2 { grid-row: span 2; }
+  .oc-subgrid-row-3 { grid-row: span 3; }
+  .oc-subgrid-row-4 { grid-row: span 4; }
+  .oc-subgrid-row-full { grid-row: 1 / -1; }
+  
+  /* SUBGRID ALIGNMENT */
+  .oc-subgrid-align-start { align-items: start; }
+  .oc-subgrid-align-center { align-items: center; }
+  .oc-subgrid-align-end { align-items: end; }
+  .oc-subgrid-align-stretch { align-items: stretch; }
+  
+  .oc-subgrid-justify-start { justify-items: start; }
+  .oc-subgrid-justify-center { justify-items: center; }
+  .oc-subgrid-justify-end { justify-items: end; }
+  .oc-subgrid-justify-stretch { justify-items: stretch; }
+  
+  /* SUBGRID CONTENT ALIGNMENT */
+  .oc-subgrid-content-start { align-content: start; }
+  .oc-subgrid-content-center { align-content: center; }
+  .oc-subgrid-content-end { align-content: end; }
+  .oc-subgrid-content-stretch { align-content: stretch; }
+  .oc-subgrid-content-space-between { align-content: space-between; }
+  .oc-subgrid-content-space-around { align-content: space-around; }
+  .oc-subgrid-content-space-evenly { align-content: space-evenly; }
+  
+  /* SUBGRID AREAS */
+  .oc-subgrid-area-header { grid-area: header; }
+  .oc-subgrid-area-main { grid-area: main; }
+  .oc-subgrid-area-sidebar { grid-area: sidebar; }
+  .oc-subgrid-area-footer { grid-area: footer; }
+  
+  /* SUBGRID GAP UTILITIES */
+  .oc-subgrid-gap-0 { gap: 0; }
+  .oc-subgrid-gap-1 { gap: var(--oc-space-1); }
+  .oc-subgrid-gap-2 { gap: var(--oc-space-2); }
+  .oc-subgrid-gap-3 { gap: var(--oc-space-3); }
+  .oc-subgrid-gap-4 { gap: var(--oc-space-4); }
+  .oc-subgrid-gap-6 { gap: var(--oc-space-6); }
+  .oc-subgrid-gap-8 { gap: var(--oc-space-8); }
+  
+  /* SUBGRID TEMPLATES */
+  .oc-grid-12 {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: var(--oc-space-4);
+  }
+  
+  .oc-grid-8 {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: var(--oc-space-4);
+  }
+  
+  .oc-grid-6 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: var(--oc-space-4);
+  }
+  
+  .oc-grid-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--oc-space-4);
+  }
+  
+  .oc-grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--oc-space-4);
+  }
+  
+  .oc-grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--oc-space-4);
+  }
+  
+  .oc-grid-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--oc-space-4);
+  }
+  
+  /* SUBGRID RESPONSIVE */
+  @container (width < 768px) {
+    .oc-subgrid-responsive {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  /* SUBGRID FALLBACK FOR OLD BROWSERS */
+  @supports not (grid-template-columns: subgrid) {
+    .oc-subgrid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    
+    .oc-subgrid-fallback {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--oc-space-4);
+    }
+  }
+}
