@@ -1,5 +1,8 @@
 # Orchestra CSS 2026 🎻
 
+[![npm version](https://badge.fury.io/js/orchestracss.svg)](https://www.npmjs.com/package/orchestracss)
+[![npm downloads](https://img.shields.io/npm/dm/orchestracss.svg)](https://www.npmjs.com/package/orchestracss)
+
 **Experiment:** What if CSS becomes the orchestrator, browser - the runtime?
 
 ## Idea
