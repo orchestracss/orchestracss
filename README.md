@@ -1,9 +1,5 @@
 # Orchestra CSS 2026 🎻
 
-[![npm version](https://badge.fury.io/js/orchestracss.svg)](https://www.npmjs.com/package/orchestracss)
-[![npm downloads](https://img.shields.io/npm/dm/orchestracss.svg)](https://www.npmjs.com/package/orchestracss)
-
-
 <div align="center">
 
 **🚨 EXPERIMENTAL PREVIEW 🚨**  
@@ -12,6 +8,8 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Status: Alpha](https://img.shields.io/badge/Status-ALPHA-red.svg)]()
 [![Version: 0.1.0](https://img.shields.io/badge/Version-0.1.0-blue.svg)]()
+[![npm version](https://badge.fury.io/js/orchestracss.svg)](https://www.npmjs.com/package/orchestracss)
+[![npm downloads](https://img.shields.io/npm/dm/orchestracss.svg)](https://www.npmjs.com/package/orchestracss)
 
 </div>
 
